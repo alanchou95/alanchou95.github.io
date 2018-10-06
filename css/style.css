@@ -7,7 +7,7 @@
     max-width: 2000px;
     margin: 120px auto 0;
     padding: 0 100px;
-    background: #faf6e9;
+    background: #ffffff;
     font-family: 'Permanent Marker', cursive;
     color: #494949;
     text-rendering: optimizeLegibility;
@@ -24,7 +24,7 @@
     font-size: 48px;
     line-height: 62px;
     color: #494949;
-    margin: 0 0 10px;
+    margin: 0;
   }
 
   h2 {
@@ -63,4 +63,29 @@
 
   a:hover {
     color: #9cd3d3;
+  }
+
+  ul.nav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  ul.nav li {
+    float: left;
+  }
+
+  ul.nav li a {
+    display: block;
+    font-size: 16px;
+    color: #62929a;
+    padding: 10px 20px 10px 0;
+  }
+
+  ul.nav li a:hover {
+    color: #b6e1e0;
+  }
+
+  ul.nav li a.active {
+    color: #b6e1e0;
   }
