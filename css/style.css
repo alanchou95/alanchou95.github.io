@@ -7,7 +7,7 @@
     max-width: 2000px;
     margin: 120px auto 0;
     padding: 0 100px;
-    background: #ffffff;
+    background: #facc2e;
     font-family: 'Permanent Marker', cursive;
     color: #494949;
     text-rendering: optimizeLegibility;
@@ -83,9 +83,9 @@
   }
 
   ul.nav li a:hover {
-    color: #b6e1e0;
+    color: #ecf4f3;
   }
 
   ul.nav li a.active {
-    color: #b6e1e0;
+    color: #ecf4f3;
   }

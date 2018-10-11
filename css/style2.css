@@ -1,0 +1,150 @@
+
+  html {
+    height: 100%;
+    font-size: 10px;
+  }
+
+/* FONTS */
+
+  @font-face {
+    font-family: 'DINRegular';
+    src: url('fonts/DIN-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'DINMedium';
+    src: url('fonts/DIN-Medium.otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'DINLight';
+    src: url('fonts/DIN-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'DINCondRegular';
+    src: url('fonts/DINCond-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'DINCondMedium';
+    src: url('fonts/DINCond-Medium.otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'DINCondLight';
+    src: url('fonts/DINCond-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body {
+    max-width: 2000px;
+    margin: 120px auto 0;
+    padding: 0 100px;
+    background: #faf6e9;
+    font-family: 'DINRegular', normal;
+    color: #494949;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  header {
+    margin: 0 0 80px;
+    position: relative;
+    z-index: 2;
+  }
+
+  h1 {
+    font-family: 'DINMedium', normal;
+    font-weight: normal;
+    font-size: 5rem;
+    line-height: 6.2rem;
+    letter-spacing: .5rem;
+    margin: 0 0 20px;
+  }
+
+  h2 {
+    font-family: 'DINMedium', normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: .2rem;
+    margin: 10px 0 10px;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    font-family: 'DINLight', normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: .06rem;
+    margin: 0;
+  }
+
+  p {
+    font-family: 'DINLight', normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: .06rem;
+    margin: 0;
+  }
+
+  a {
+    color: #537093;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+
+  a:visited {
+    color: #537093;
+  }
+
+  a:hover {
+    color: #9cd3d3;
+  }
+
+  ul.nav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    left: -10px;
+  }
+
+  ul.nav li {
+    float: left;
+  }
+
+  ul.nav li a {
+    display: block;
+    font-family: 'DINRegular', normal;
+    font-size: 1.6rem;
+    letter-spacing: 0.16rem;
+    color: #494949;
+    padding: 10px;
+  }
+
+  ul.nav li a:hover {
+    color: #c7b198;
+  }
+
+  ul.nav li a.active {
+    color: #c7b198;
+  }
