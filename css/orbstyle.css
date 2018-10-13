@@ -69,12 +69,26 @@
   .answer {
     position: relative;
     align-items: center;
+    text-align: center;
     margin-top: 85px;
   }
 
   p {
     color: #deb15c;
     font-size: 24px;
+  }
+
+  .footer p {
+    color: #857671;
+    font-size: 14px;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    left: 0;
+    right: 0;
+    bottom: 50px;
   }
 
 /*
