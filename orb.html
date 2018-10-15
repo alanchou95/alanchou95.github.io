@@ -10,6 +10,7 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
     <script src="js/orb.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Magic Orb by Alan Chou</title>
   </head>
 
@@ -17,18 +18,18 @@
 
     <div class='animated fadeIn'>
 
-      <div>
-        <video class='center' autoplay loop muted width="950">
+      <div class="video">
+        <video class="center" autoplay loop muted width="950">
           <source src='assets/particleorb.mp4' type='video/mp4'>
         </video>
       </div>
 
       <div class="form">
-        <form>
-          Ask the all-knowing orb, <br>
+        <form onSubmit="return false;">
+          Ask the All-Knowing Orb anything, <br>
           and it shall be answered.<br>
-          <input class='inputRange' type='text' name='question' value='ENTER A YES-NO QUESTION HERE'><br>
-          <input type='button' value='ASK' onclick="response()">
+          <input class='inputRange' type='text' id='question' placeholder='ENTER A YES-NO QUESTION'><br>
+          <button id='submit' onclick="response()">ASK</button>
         </form>
       </div>
 

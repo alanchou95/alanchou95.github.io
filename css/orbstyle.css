@@ -19,9 +19,13 @@
   }
 
   .center {
-      margin-left: auto;
-      margin-right: auto;
-      display: block
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+  }
+
+  .video {
+    top: 5%;
   }
 
   .inputRange {
@@ -45,7 +49,7 @@
     transition: 0.3s;
   }
 
-  input[type=button] {
+  button {
     background-color: #deb15c;
     border: none;
     border-radius: 2px;
@@ -60,7 +64,7 @@
     transition: 0.3s;
   }
 
-  input[type=button]:hover {
+  button:hover {
     background-color: #494949;
     color: #faf6e9;
     transition: 0.3s;
