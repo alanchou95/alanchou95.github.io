@@ -10,18 +10,18 @@
 
 <body>
   <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-    <div class="container"> <a class="navbar-brand text-primary smoothScroll" href="#top">
+    <div class="container"> <a class="navbar-brand text-primary" href="#top">
         <b> SUGARFREE</b>
       </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-start" id="navbar4">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"> <a class="nav-link smoothScroll" href="#why">Why SUGARFREE?</a> </li>
-          <li class="nav-item"> <a class="nav-link smoothScroll" href="#intro">Introduction</a> </li>
-          <li class="nav-item"> <a class="nav-link smoothScroll" href="#cal">Track</a> </li>
-          <li class="nav-item"> <a class="nav-link smoothScroll" href="#log">Log</a> </li>
-          <li class="nav-item"> <a class="nav-link smoothScroll" href="#arch">Archive</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#why">Why SUGARFREE?</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#intro">Introduction</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#cal">Track</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#log">Log</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#arch">Archive</a> </li>
         </ul>
       </div>
     </div>
@@ -31,7 +31,7 @@
       <div class="row">
         <div class="mx-auto col-lg-8 col-md-10">
           <h1 class="display-3 mb-4 text-primary"><b>SUGARFREE</b></h1>
-          <p class="lead mb-4">Track your daily sugar and calories consumption&nbsp;<br>through sugary beverages for a healthier life</p> <a class="btn btn-lg mx-1 btn-outline-primary smoothScroll" href="#intro">See Demo</a>
+          <p class="lead mb-4">Track your daily sugar and calories consumption&nbsp;<br>through sugary beverages for a healthier life</p> <a class="btn btn-lg mx-1 btn-outline-primary" href="#intro">See Demo</a>
         </div>
       </div>
     </div>
@@ -80,7 +80,7 @@
       </div>
       <div class="row">
         <div class="col-lg-4 p-3">
-          <a href="#cal" class="smoothScroll">
+          <a href="#cal">
             <div class="card">
               <div class="card-body p-4"> <img class="img-fluid d-block mb-3 mx-auto" src="sugarAssets/cal.png" width="100">
                 <h2>Calendar&nbsp;<br>View</h2>
@@ -90,7 +90,7 @@
           </a>
         </div>
         <div class="col-lg-4 p-3 col-md-6">
-          <a href="#log" class="smoothScroll">
+          <a href="#log">
             <div class="card">
               <div class="card-body p-4"> <img class="img-fluid d-block mb-3 mx-auto" src="sugarAssets/log2.png" width="100">
                 <h2>Consumption Log</h2>
@@ -100,7 +100,7 @@
           </a>
         </div>
         <div class="col-lg-4 p-3 col-md-6">
-          <a href="#arch" class="smoothScroll">
+          <a href="#arch">
             <div class="card">
               <div class="card-body p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="sugarAssets/bottle.png" width="100">
                 <h2>Beverage Archive</h2>
@@ -150,7 +150,7 @@
       <div class="row">
         <div class="col-md-12 text-center d-md-flex justify-content-between align-items-center">
           <ul class="nav d-flex justify-content-center">
-            <li class="nav-item"> <a class="nav-link active smoothScroll" href="#top"><i class="fa fa-fw fa-chevron-up"></i>&nbsp;Back to Top</a> </li>
+            <li class="nav-item"> <a class="nav-link active" href="#top"><i class="fa fa-fw fa-chevron-up"></i>&nbsp;Back to Top</a> </li>
           </ul>
           <p class="mb-0 py-1" contenteditable="true">© 2018 Alan Chou. All rights reserved</p>
         </div>
@@ -162,6 +162,33 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="sugarAssets/smoothscroll.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
 </body>
 
 </html>
